@@ -1,6 +1,6 @@
 import request from '@/utils/http'
 import { PaginationResponse, BaseResponse } from '@/types/api'
-import { ArticleType, ArticleCategoryType, ArticleQueryParams } from './modules/article'
+import { ArticleType, ArticleCategoryType, ArticleQueryParams } from '@/api/modules'
 
 // 文章
 export class ArticleService {

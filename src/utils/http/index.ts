@@ -161,9 +161,6 @@ const api = {
   put<T>(config: ExtendedRequestConfig): Promise<T> {
     return request({ ...config, method: 'PUT' }) // PUT 请求
   },
-  del<T>(config: ExtendedRequestConfig): Promise<T> {
-    return request({ ...config, method: 'DELETE' }) // DELETE 请求
-  },
   request<T>(config: ExtendedRequestConfig): Promise<T> {
     return request({ ...config }) // 通用请求
   }

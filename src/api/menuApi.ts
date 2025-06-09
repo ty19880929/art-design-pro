@@ -11,9 +11,8 @@ export const menuService = {
   async getMenuList(delay = 300): Promise<MenuResponse> {
     try {
       // 模拟接口返回的菜单数据
-      const menuData = asyncRoutes
       // 处理菜单数据
-      const menuList = menuData.map((route) => menuDataToRouter(route))
+      const menuList = asyncRoutes.map((route) => menuDataToRouter(route))
       // 模拟接口延迟
       await new Promise((resolve) => setTimeout(resolve, delay))
 

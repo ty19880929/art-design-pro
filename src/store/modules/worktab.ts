@@ -72,10 +72,12 @@ export const useWorktabStore = defineStore(
       }
 
       try {
-        router.push({
-          path: tab.path,
-          query: tab.query as LocationQueryRaw
-        })
+        router
+          .push({
+            path: tab.path,
+            query: tab.query as LocationQueryRaw
+          })
+          .then(() => {})
       } catch (error) {
         console.error('路由跳转失败:', error)
       }
